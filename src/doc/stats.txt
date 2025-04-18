@@ -1,0 +1,125 @@
+Sector 12:
+Gyms
+Iron Gym: $108/s, 2.216 xp/s
+->Powerhouse; $2400/s, 22.165 xp/s
+
+Rothman University
+Computer Science: $free, 2.216 xp/s
+Data Structures: $120/s, 4.433 xp/s
+Networks: $240/s, 8.866 xp/s
+Algorithms: $960/s, 17.732 xp/s
+Management: $480/s, 7.777 xp/s
+Leadership: $960/s 15.554 xp/s
+
+Aevum:
+Gyms
+Crush: $324/s, 4.433 xp/s
+Snap: $1200/s, 11.082 xp/s
+
+Summit University:
+Computer Sicence: $free, 3.325 xp/s
+DS: $160/s, 6.649 xp/s
+Networks: $320/s, 13.299 xp/s
+Algo: $1280/s, 26.597 xp/s
+Manag: $640/s, 11.666 xp/s
+Lead: $1280/s, 23.331 xp/s
+
+Volhaven
+Gyms:
+Millenium: $840/s 8.866 xp/s
+
+->ZBIT University:
+Comp Sci: $free 4.433 xp/s
+DS: $200/s 8,866 xp/s
+Networks: $400/s, 17.732 xp
+Algo: $1600/s 35.463 xp
+Manage: $800/s, 15.554 xp
+Leadership: $1600/s, 31.108 xp
+__________________________________________________
+INT:
+How to gain INT:
+Creating programs.
+This is based on current activity time, so if you cancel and come back at 99%, the gain will be minimal,
+but also if you exit the game while creating the program and come back a week later it will be huge.
+Manual hacking.
+From terminal, or from singularity hack function.
+Normal script hack doesn't give a single int xp.
+Lots of Singularity functions, even simple ones like move to location.
+BladeBurner missions.
+These seems to give the highest amount.
+Certain crimes.
+
+What INT affects:
+Hack time and hack success.
+Faction rep gain Crime succes.
+Infiltration difficulty, BladeBurner success, Power of share().
+Also applies to Sleeves.
+Company job performance, Half of int also adds to hacking when calculating whether can create a program.
+
+HOWEVER, the multipliers are very, very low.
+On Int 100, you get a 6% increase in above listed stats, except last two,
+which are calculated differently (but still give very low benefit).
+On Int 1000 it's still 41%.
+__________________________________________________
+FAVOR:
+Do the save backup for +1 favor on all discovered facts.
+231.25k rep to fet 75 favor
+462.5k rep to get 150 favor
+An XP script will help you max your hacking level fast, both increasing your rep gain and money gains.
+Simply do a weaken/grow loop with all your ram against joesguns until money is maxed and security is minimum.
+Throw all your ram at grows (they don't increase security when they do not refund money, but still give XP).
+For favor, install at 75 favor and again at 150 favor.
+This is only worth doing for the later factions, since it takes about 462.5k rep to get 150 favor
+(all early factions require less than that to obtain all their augments)
+__________________________________________________
+Karma loss per second by crime:
+0.0500 Shoplifting
+0.0083 Robbery
+0.0625 Mugging
+0.0167 Larceny
+0.0500 Drug dealing
+0.0003 Bond forgery
+0.0250 Trafficking arms
+1.0000 Homicide
+0.0625 Grand theft auto
+0.0500 Kidnapping
+0.0333 Assassination
+0.0250 The ultimate heist
+__________________________________________________
+Crime	        Money	       hack xp	str xp	def xp	dex xp	agi xp	cha xp	karma
+Shoplift	    $15,000		   0	      0       0       2	      2		    0       0.10
+2	            $7,500	     0	      0	      0	      1	      1	      0	      0.05
+
+Rob Store	    $400,000	   30			  0       0       45	    45		  0       0.5
+60	          $6,667	     0.5	    0	      0	      0.75	  0.75	  0 	    0.008
+
+Mug	          $36,000		   0        3	      3	      3	      3		    0       0.25
+4	            $9,000	     0	      0.75   	0.75	  0.75	  0.75	  0      	0.0625
+
+Larceny	      $800,000  	 45			  0       0       60	    60	    0     	1.5
+90	          $8,889	     0.5	    0	      0	      0.66	  0.66	  0     	0.016
+
+Deal Drugs    $120,000	   0        0       0  			5	      5	      10	    0.5
+10	          $12,000	     0	      0	      0	      0.5	    0.5	    1      	0.05
+
+Bond Forgery	$4,500,000   100			0       0       150	    0      	15	    0.1
+300	          $15,000	     0.33	    0	      0	      0.5	    0	      0.05	  0.0003
+
+Traffick Arms	$600,000	   0        20	    20	    20	    20	    40	    1.0
+40	          $15,000	     0	      0.5	    0.5	    0.5	    0.5	    1	      0.025
+
+Homicide	    $45,000		   0        2	      2	      2	      2		    0       3.0
+3	            $15,000	     0	      0.66	  0.66	  0.66	  0.66	  0	      1.0
+
+GTA	          $1,600,000   0        20	    20	    20	    20	    40	    5.0
+80	          $20,000	     0	      0.25	  0.25	  0.25	  0.25	  0.5	    0.0625
+
+Kidnap	      $3,600,000   0        80	    80	    80	    80	    80	    6.0
+120	          $30,000	     0	      0.66	  0.66	  0.66	  0.66	  0.66	  0.05
+
+Assassination	$12,000,000	 0	      300	    300	    300	    300		  0       10.0
+300	          $40,000	     0	      1	      1      	1     	1	      0	      0.033
+
+Heist	        $120,000,000 450	    450	    450	    450	    450   	450	    15.0
+600	          $200,000	   0.75	    0.75	  0.75	  0.75	  0.75	  0.75	  0.025
+__________________________________________________

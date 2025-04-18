@@ -1,0 +1,408 @@
+Sector-12: Megacorp, Four Sigma, Blade
+
+Chongqing: KuaiGong International
+
+Volhaven: NWO, OmniTek Incorporated
+
+Aevum: ECorp, Bachman & Associates, Clarke Incorporated, Fulcrum Secret Technologies
+______________________________________________________
+______________________________________________________
+______________________________________________________
+Hacking Factions
+CRTX42-AA Gene Modification (NiteSec)
+Money Cost: $225.000m
+Reputation: 45.000k
+Hacking Skill +8%
+Hacking Exp +15%
+
+Neural-Retention Enhancement (NiteSec)
+Money Cost: $250.000m
+Reputation: 20.000k
+Hacking Exp +25%
+
+The Black Hand (The Black Hand)
+Money Cost: $550.000m
+Reputation: 100.000k
+Hacking Skill +10%
+Strength Skill +15%
+Dexterity Skill +15%
+Hack/Grow/Weaken Speed +2%
+Hack Power +10%
+
+Neural Accelerator (BitRunners)
+Money Cost: $1.750b
+Reputation: 200.000k
+Hacking Skill +10%
+Hacking Exp +15%
+Hack Power +20%
+
+Cranial Signal Processors - Gen V (BitRunners)
+Money Cost: $2.250b
+Reputation: 250.000k
+Requires: Cranial Signal Processors - Gen IV
+Hacking Skill +30%
+Hack Power +25%
+Grow Power +75%
+
+BitRunners Neurolink (BitRunners)
+Money Cost: $4.375b
+Reputation: 875.000k
+Hacking Skill +15%
+Hacking Exp +20%
+Hack/Grow/Weaken Speed +5%
+Hack Chance +10%
+Start with FTPCrack.exe, RelaySMTP.exe
+______________________________________________________
+Corporations
+ECorp HVMind Implant (ECorp)
+Money Cost: $5.500b
+Reputation: 1.500m
+Grow Power +200%
+
+CordiARC Fusion Reactor (MegaCorp)
+Money Cost: $5.000b
+Reputation: 1.125m
+Combat Skills +35%
+Combat Exp +35%
+
+SmartJaw (Bachman & Associates)
+Money Cost: $2.750b
+Reputation: 375.000k
+Charisma Skill +50%
+Charisma Exp +50%
+Faction/Company Reputation Gain +25%
+
+Neotra (Blade Industries)
+Money Cost: $2.875b
+Reputation: 562.500k
+Strength Skill +55%
+Defense Skill +55%
+
+Xanipher (NWO)
+Money Cost: $4.250b
+Reputation: 875.000k
+All Skills +20%
+All Exp +15%
+
+Hydroflame Left Arm (NWO)
+Money Cost: $2.500t
+Reputation: 1.250m
+Strength Skill +170%
+
+Neuronal Densification (Clarke Incorporated)
+Money Cost: $1.375b
+Reputation: 187.500k
+Hacking Skill +15%
+Hacking Exp +10%
+Hack/Grow/Weaken Speed +3%
+
+nextSENS Gene Modification (Clarke Incorporated)
+Money Cost: $1.925b
+Reputation: 437.500k
+All Skills +20%
+
+OmniTek InfoLoad (OmniTek Incorporated)
+Money Cost: $2.875b
+Reputation: 625.000k
+Hacking Skill +20%
+Hacking Exp +25%
+
+Photosynthetic Cells (KuaiGong International)
+Money Cost: $2.750b
+Reputation: 562.500k
+Strength Skill +40%
+Defense Skill +40%
+Agility Skill +40%
+
+PC Direct-Neural Interface NeuroNet Injector (Fulcrum Secret Technologies)
+Money Cost: $7.500b
+Reputation: 1.500m
+Requires: PC Direct-Neural Interface
+Hacking Skill +10%
+Hack/Grow/Weaken Speed +5%
+Company Reputation Gain +100%
+______________________________________________________
+City Factions
+CashRoot Starter Kit (Sector-12)
+Money Cost: $125.000m
+Reputation: 12.500k
+Start with 1.000m
+Start with BruteSSH.exe
+
+PCMatrix (Aevum)
+Money Cost: $2.000b
+Reputation: 100.000k
+Charisma Skill +7.77%
+Charisma Exp +7.77%
+Faction/Company Reputation +7.77%
+Work Money +77.7%
+Crime Chance +7.77%
+Crime Money +7.77%
+Start with DeepscanV1.exe, AutoLink.exe
+
+DermaForce Particle Barrier (Volhaven)
+Money Cost: $50.000m
+Reputation: 15.000k
+Defense Skill +40%
+
+Neuregen Gene Modification (Chongqing)
+Money Cost: $375.000m
+Reputation: 37.500k
+Hacking Exp +40%
+
+NutriGen Implant (New Tokyo)
+Money Cost: $2.500m
+Reputation: 6.250k
+Combat Exp +20%
+
+INFRARET Enhancement (Ishima)
+Money Cost: $30.000m
+Reputation: 7.500k
+Dexterity Skill +10%
+Crime Chance +25%
+Crime Money +10%
+______________________________________________________
+Criminal Factions
+SmartSonar Implant (Slum Snakes)
+Money Cost: $75.000m
+Reputation: 22.500k
+Dexterity Skill +10%
+Dexterity Exp +15%
+Crime Money +25%
+
+Bionic Arms (Tetrads)
+Money Cost: $275.000m
+Reputation: 62.500k
+Strength Skill +30%
+Dexterity Skill +30%
+
+TITN-41 Gene-Modification Injection (Silhouette)
+Money Cost: $190.000m
+Reputation: 25.000k
+Charisma Skill +15%
+Charisma Exp +15%
+
+Graphene BrachiBlades Upgrade (Speakers for the Dead)
+Money Cost: $2.500b
+Reputation: 225.000k
+Requires: BrachiBlades
+Strength Skill +40%
+Defense Skill +40%
+Crime Chance +10%
+Crime Money +30%
+
+Unstable Circadian Modulator (Speakers for the Dead)
+Money Cost: $5.000b
+Reputation: 362.500k
+Random positive effects
+
+Graphene Bionic Arms Upgrade (The Dark Army)
+Money Cost: $3.750b
+Reputation: 500.000k
+Requires: Bionic Arms
+Strength Skill +85%
+Dexterity Skill +85%
+
+BrachiBlades (The Syndicate)
+Money Cost: $90.000m
+Reputation: 12.500k
+Strength Skill +15%
+Defense Skill +15%
+Crime Chance +10%
+Crime Money +15%
+______________________________________________________
+Other Factions
+Social Negotiation Assistant (S.N.A) (Tian Di H*i)
+Money Cost: $30.000m
+Reputation: 6.250k
+Faction/Company Reputation Gain +15%
+Work Money +10%
+
+Neuroreceptor Management Implant (Tian Di H*i)
+Money Cost: $550.000m
+Reputation: 75.000k
+Removes penalty when working for faction/corp unfocused
+
+The Red Pill (Daedalus)
+Money Cost: $0.000
+Reputation: 2.500m
+Adds w0r1d_d43m0n to network topology
+
+SPTN-97 Gene Modification (The Covenant)
+Money Cost: $4.875b
+Reputation: 1.250m
+Hacking Skill +15%
+Combat Skills +75%
+
+QLink (Illuminati)
+Money Cost: $25.000t
+Reputation: 1.875m
+Hacking Skill +75%
+Hack/Grow/Weaken Speed +100%
+Hack Chance +150%
+Hack Power +300%
+______________________________________________________
+______________________________________________________
+______________________________________________________
+Bitburner Factions – Hacker Groups
+
+CyberSec:
+Hack CSEC manually
+
+NiteSec:
+Hack avmnite-02h manually
+Home RAM at least 32
+
+The Black Hand:
+Hack I.I.I.I manually
+Home RAM of 64 GB
+
+BitRunners:
+Hack run4theh111z manually
+Home RAM of 128 GB
+
+Netburners:
+Total Hacknet levels 100
+Hacking 80
+Total Hacknet RAM 8
+Total Hacknet Cores
+______________________________________________________
+Bitburner Factions – City
+
+Tian Di Hui:
+$1,000,000
+Hacking 50
+Be in Chongquin, New Tokyo, or Ishima
+
+Sector-12:
+Be in Sector-12
+$15,000,000
+
+Chongquin:
+Be in Chongquin
+$20,000,000
+Not in city factions Sector-12, Aevum, or Volhaven
+
+New Tokyo:
+Be in New Tokyo
+$20,000,000
+Not in city factions Sector-12, Aevum, or Volhaven
+
+Ishima:
+Be in Ishima
+$30,000,000
+Not in city factions Sector-12, Aevum, or Volhaven
+
+Aevum:
+Be in Aevum
+$40,000,000
+
+Volhaven:
+Be in Volhaven
+$50,000,000
+Not in any other city faction
+______________________________________________________
+Bitburner Factions – Megacorporations
+
+MegaCorp:
+Work for MegaCorp
+At least 200,000 reputation
+
+Blade Industries:
+Work for Blade Industries
+At least 200,000 reputation
+
+Four Sigma:
+Work for Four Sigma
+At least 200,000 reputation
+
+KuaiGong International:
+Work for KuaiGong International
+At least 200,000 reputation
+
+NWO:
+Work for NWO
+At least 200,000 reputation
+
+OmniTek Incorporated:
+Work for OmniTek Incorporated
+At least 200,000
+
+ECorp:
+Work for ECorp
+At least 200,000 reputation
+
+Bachman & Associates:
+Work for Backman & Associates
+At least 200,000 reputation
+
+Clarke Incorporated:
+Work for Clarke Incorporated
+At least 200,000 reputation
+
+Fulcrum Secret Technologies:
+Work for Fulcrum Technologies
+At least 200,000 reputation
+Hack fulcrumassets manually
+______________________________________________________
+Bitburner Factions – Criminal Organizations
+
+Slum Snakes:
+All combat stats 30
+-9 karma
+$1,000,000
+
+Tetrads:
+Be in Chongquin, New Tokyo, or Ishima
+All combat stats 75
+-18 karma
+
+Silhouette:
+CTO, CFO, or CEO at any company
+$15,000,000
+-22 karma
+
+Speakers for the Dead:
+Hacking 100
+All combat stats 300
+30 people killed
+-45 karma
+NOT working for CIA or NSA
+
+The Dark Army:
+Hacking 300
+All combat stats 300
+Be in Chongquin
+5 people killed
+-45 karma
+NOT working for CIA or NSA
+
+The Syndicate:
+Hacking 200
+All combat stats 200
+Be in Aevum or Sector-12
+$10,000,000
+-90 karma
+NOT working for CIA or NSA
+______________________________________________________
+Bitburner Factions – Endgame
+
+The Covenant:
+30 augmentations
+$75,000,000,000
+Hacking 850
+All combat stats 850
+
+Daedalus:
+30 augmentations
+$100,000,000,000
+Hacking 2500 or all combat stats 1500
+
+Illuminati:
+30 augmentations
+$150,000,000,000
+Hacking 1500
+All combat stats 1200
+______________________________________________________
+______________________________________________________
+______________________________________________________

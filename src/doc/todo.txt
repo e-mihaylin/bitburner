@@ -1,0 +1,190 @@
+global:
+- migrate to typescript files
+- add types
+- use ns.getMoneySources?
+- rm singleton (8gb), manage from player
+- monitor of running (not shared) scripts
+- auto backup once a day/hour
+- use storage (storage events?), files, ports (queues)?
+- port usage: hack/grow/weaken info
+- split utils to lower ram
+
+  // const unlocked = {
+  //   darkweb: ns.hasTorRouter(),
+  //   stock: ns.stock.has4SDataTIXAPI(), // ToDo: market api levels
+  //   go: !!ns.go,
+  //   formulas: !!ns.formulas,
+  //   singularity: !!ns.singularity,
+  //   gang: ns.gang.inGang(),
+  // };
+
+scan:
+iterate all hosts:
+- search and solve cct
+- if not all ports open, use cracks
+- if not root, use nuke
+- if not all lit, search lit
+- if not backdoored, backdoor
+- skip if target,
+- skip if target, if nuked, can hack, has money, push to targets
+- skip if attacker, if nuked, has ram, so scp, push to attackers
+
+player:
+- unlocks tracking
+- money management
+- early game scripts versions (low mem), switch on events, singularity versions
+- port writing
+- global state objects
+- coordinate attack mode
+- coordinate purchase/hashnet/hashes
+- coordinate market
+- coordinate servers purchase
+- coordinate share
+- coordinate search
+- coordinate attackers/targets/purchased (use utils), write to ports, use caches
+- coordinate exploit (track SF)
+- coordinate augmenets
+- coordinate programs/darknet
+- coordinate factions/conditions/reputations/favor
+- coordinate augmenets/install/backups
+- coordinate hacking/univercity/strategies
+- coordinate money/crimes
+- coordinate home upgrades
+- low/high memory versions
+- implement singularity without singularity
+- use singularity
+- use getBitNodeMultipliers
+- all document using methods to 1 file, use getters (ram?) or port commands
+- full early game automate
+- full end game automate
+
+analyze:
+- improve scoring (money ok, hacking ok, time not ok)
+- clear unused stats (avg), global info
+
+attack:
+- scan for new targets/attakers, kill shared, prepare, batch
+- write actual income per sec/ram after prepare
+- auto increase hackPercent if free ram OR
+- use multiple batches against 1 target
+- use hack vs stocks info
+- add circleRam, circleTime to analyze stats
+- calc prepare time (console.time)
+- mode switch from player
+- prepare to separate file?
+- separate xp script
+- add best xp to analyze (ns.getServer(h).baseDifficulty / ns.getWeakenTime(h))
+
+utils:
+- fetch all data only once
+- listen port data
+- send port data
+- JSON.stringify(, null, 2) -> utils
+- use caches for utils lists, invalidate caches by server sell/purchase (use ports)
+- utilize less ram on document
+
+exploit:
+- better dev menu
+- automate alter reality
+- automate edit
+- automate megabyteburner
+- automate n00dles
+
+go:
+- improve strategies by filters
+- move scoring/decisions
+- check best scripts
+- use cheats
+
+hacknet:
+- simple/hashnet versions
+- better hashnet logic (predict outcome)
+- upgrade caches depending on hashes max price
+- smart version - calculate upgrade pay itself time
+(first - by hashes sell to money, second - by target money grow, weaken, etc)
+
+hashes:
+- all hashes upgrades automate
+- move to hacknet?
+- send event on server money/security change
+
+hud:
+- better targets (maxed targets/attacked targets/backdoored/all)
+- better attackers (owned/rooted/known)
+- better incomes (market? hashnet?)
+- corporations?
+- go stats?
+- factions?
+
+market:
+- automate without 4sigma data (for bitnode 8)
+- port writing
+- profit per sec
+- manage from player.js
+
+purchase:
+- auto stopPurchase manage (from player?)
+
+search:
+- click focus (if no aug) after search, search from focus
+- write contracts to out file
+- solver cleanup
+- backdoor separate?
+- spawn lit grabber?
+- spawn cct solver?
+- spawn backdoor?
+- all spawns from player?
+
+
+sell:
+- get shortUnlock from player.js
+
+share-all:
+- rename?
+- params from player
+- all free space after batch attacks
+
+gangs:
+- cleanup code, tasks
+- dont puy hacking upgrades for combat gangs
+- support hacking gangs
+
+corporation:
+- todo
+
+bladeburners:
+- todo
+
+sleeves:
+- todo
+
+stanek:
+- todo
+
+infiltrate:
+- automate
+
+startup:
+- create program BruteSSH.exe (todo) focus
+- run attack.js simple
+- do crime? mug? larceny? (todo) focus
+- build 1st money, buy 1st hacknet (~34k)
+- if int create program AutoLink.exe  focus
+- if int create program DeepscanV1.exe focus
+- if int create program ServerProfiler.exe focus
+- store money, buy home ram (~10m -> 31.862m -> 100.684m)
+- run startup (go, purchase, hashes, hacknet, attack, se)
+- enter factions, travel
+- run share
+- do rep (focus)
+- spend money
+- store money ? when
+- store money, buy home ram (?)
+- build up 300+m, run sell
+- spend money
+- store money ? when
+- store money, buy home ram (?)
+- build up 31,2b, buy stock api (todo), run m, run hud
+- buy augmentations (unfocus)
+- wait for 100+TB, run attack.js not simple
+- make -54k karma, kills
