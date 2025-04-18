@@ -18,7 +18,6 @@ export const main = async (ns: NS): Promise<void> => {
       for (const attacker of attackers) {
         const targets: Target[] = getItem('targets') || [];
         const target: Target = getWeightedTarget(targets);
-        // ns.tprint(target);
         const attackerHost: string = attacker.hostname;
         const targetHost: string = target.hostname;
         const isHome: boolean = attackerHost === 'home';

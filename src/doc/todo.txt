@@ -8,6 +8,7 @@ global:
 - use storage (storage events?), files, ports (queues)?
 - port usage: hack/grow/weaken info
 - split utils to lower ram
+- add alias parse, exec
 
   // const unlocked = {
   //   darkweb: ns.hasTorRouter(),
