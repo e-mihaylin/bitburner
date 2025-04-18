@@ -21,8 +21,9 @@ export const main = async (ns: NS): Promise<void> => {
         const attackerHost: string = attacker.hostname;
         const targetHost: string = target.hostname;
         const isHome: boolean = attackerHost === 'home';
-        const maxRam: number = ns.getServerMaxRam(attackerHost) -
-          (isHome ? ns.getServerMaxRam('home') > reservedHomeRam ? reservedHomeRam : 0 : 0);
+        const maxRam: number =
+          ns.getServerMaxRam(attackerHost) -
+          (isHome ? (ns.getServerMaxRam('home') > reservedHomeRam ? reservedHomeRam : 0) : 0);
         const ramAvailable: number = Math.max(maxRam - ns.getServerUsedRam(attackerHost), 0);
         const ramPerThread: number = ns.getScriptRam(scripts[0]);
         const maxThreads: number = Math.floor(ramAvailable / ramPerThread);
@@ -36,21 +37,35 @@ export const main = async (ns: NS): Promise<void> => {
             const threads: number = Math.min(maxThreads, weakenThreads);
             threads > 0 && ns.exec(scripts[0], attackerHost, threads, targetHost);
             sleepTime = Math.min(sleepTime, ns.getWeakenTime(targetHost));
-            if (!silent) ns.toast(`Running weaken on attacker: ${attackerHost}, target ${targetHost}, threads ${threads}`);
+            if (!silent)
+              ns.toast(
+                `Running weaken on attacker: ${attackerHost}, target ${targetHost}, threads ${threads}`,
+              );
           } else if (ns.getServerMoneyAvailable(targetHost) < moneyThreshold) {
-            const targetGrowthMultiplier: number = target.moneyMax / (target.moneyAvailable || 0.01);
-            const growThreads: number = Math.ceil(ns.growthAnalyze(targetHost, targetGrowthMultiplier, attacker.cpuCores));
+            const targetGrowthMultiplier: number =
+              target.moneyMax / (target.moneyAvailable || 0.01);
+            const growThreads: number = Math.ceil(
+              ns.growthAnalyze(targetHost, targetGrowthMultiplier, attacker.cpuCores),
+            );
             const threads: number = Math.min(maxThreads, growThreads);
             threads > 0 && ns.exec(scripts[1], attackerHost, threads, targetHost);
             sleepTime = Math.min(sleepTime, ns.getGrowTime(targetHost));
-            if (!silent) ns.toast(`Running grow on attacker: ${attackerHost}, target ${targetHost}, threads ${threads}`);
+            if (!silent)
+              ns.toast(
+                `Running grow on attacker: ${attackerHost}, target ${targetHost}, threads ${threads}`,
+              );
           } else {
             const targetHackAmount: number = target.moneyAvailable - moneyThreshold;
-            const hackThreads: number = Math.ceil(ns.hackAnalyzeThreads(targetHost, targetHackAmount));
+            const hackThreads: number = Math.ceil(
+              ns.hackAnalyzeThreads(targetHost, targetHackAmount),
+            );
             const threads: number = Math.min(maxThreads, hackThreads);
             threads > 0 && ns.exec(scripts[2], attackerHost, threads, targetHost);
             sleepTime = Math.min(sleepTime, ns.getHackTime(targetHost));
-            if (!silent) ns.toast(`Running hack on attacker: ${attackerHost}, target ${targetHost}, threads ${threads}`);
+            if (!silent)
+              ns.toast(
+                `Running hack on attacker: ${attackerHost}, target ${targetHost}, threads ${threads}`,
+              );
           }
         }
       }
@@ -59,10 +74,10 @@ export const main = async (ns: NS): Promise<void> => {
       ns.tprint(`error, attack-simple.ts, ${error}`);
     }
   }
-}
+};
 
 const getWeightedTarget = (targets: Target[]) => {
   const random: number = Math.random();
-  const weightedRandomIndex: number = targets.findIndex(target => random <= target.weight);
+  const weightedRandomIndex: number = targets.findIndex((target) => random <= target.weight);
   return targets[weightedRandomIndex];
-}
+};

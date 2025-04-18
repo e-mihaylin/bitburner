@@ -8,4 +8,4 @@ export const main = async (ns: NS): Promise<void> => {
     ns.run('/scripts/scan.js');
     await ns.sleep(interval);
   }
-}
+};

@@ -26,7 +26,6 @@ iterate all hosts:
 - if not root, use nuke
 - if not all lit, search lit
 - if not backdoored, backdoor
-- skip if target,
 - skip if target, if nuked, can hack, has money, push to targets
 - skip if attacker, if nuked, has ram, so scp, push to attackers
 

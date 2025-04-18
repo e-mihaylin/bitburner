@@ -20,7 +20,7 @@ export const main = async (ns: NS): Promise<void> => {
   setItem('targets', targets);
   setItem('attackers', attackers);
   setItem('purchased', purchased);
-}
+};
 
 const getHosts = (ns: NS): string[] => {
   const hosts: Record<string, string> = {};
@@ -39,12 +39,12 @@ const getHosts = (ns: NS): string[] => {
   }
 
   return Object.keys(hosts);
-}
+};
 
 const getTargets = (ns: NS, hosts: string[], weigth: boolean = true): Target[] => {
   const targets: Target[] = hosts
-    .filter(host => canPenetrate(ns, host) && canHack(ns, host) && ns.getServer(host).moneyMax)
-    .map(host => {
+    .filter((host) => canPenetrate(ns, host) && canHack(ns, host) && ns.getServer(host).moneyMax)
+    .map((host) => {
       if (!ns.hasRootAccess(host)) getRoot(ns, host);
       return analyzeServer(ns, host);
     })
@@ -60,43 +60,41 @@ const getTargets = (ns: NS, hosts: string[], weigth: boolean = true): Target[] =
     target.weight = sum;
     return target;
   });
-}
+};
 
-const getAttackers = (ns: NS, hosts: string[]) => hosts
-  .filter((host: string) => canPenetrate(ns, host) && ns.getServerMaxRam(host))
-  .map((host: string) => {
-    if (!ns.hasRootAccess(host)) getRoot(ns, host);
+const getAttackers = (ns: NS, hosts: string[]) =>
+  hosts
+    .filter((host: string) => canPenetrate(ns, host) && ns.getServerMaxRam(host))
+    .map((host: string) => {
+      if (!ns.hasRootAccess(host)) getRoot(ns, host);
+      if (!ns.fileExists(scripts[0], host)) ns.scp(scripts, host);
+      return ns.getServer(host);
+    });
+
+const getPurchased = (ns: NS, hosts: string[]) =>
+  ['home'].concat(hosts.filter((host) => host.startsWith('s-'))).map((host: string) => {
     if (!ns.fileExists(scripts[0], host)) ns.scp(scripts, host);
     return ns.getServer(host);
   });
 
-
-const getPurchased = (ns: NS, hosts: string[]) => ['home'].concat(hosts.filter(host => host.startsWith('s-')))
-  .map((host: string) => {
-    if (!ns.fileExists(scripts[0], host)) ns.scp(scripts, host);
-    return ns.getServer(host);
-  });
-
-const canPenetrate = (ns: NS, host: string) =>
-  getCracksCount(ns) >= ns.getServerNumPortsRequired(host);
+const canPenetrate = (ns: NS, host: string) => getCracksCount(ns) >= ns.getServerNumPortsRequired(host);
 
 const getCracksCount = (ns: NS, homeServer = 'home') =>
-  Object.keys(getCracks(ns)).filter(file => ns.fileExists(file, homeServer)).length;
+  Object.keys(getCracks(ns)).filter((file) => ns.fileExists(file, homeServer)).length;
 
 const getCracks = (ns: NS) => ({
   'BruteSSH.exe': ns.brutessh,
   'FTPCrack.exe': ns.ftpcrack,
   'relaySMTP.exe': ns.relaysmtp,
   'HTTPWorm.exe': ns.httpworm,
-  'SQLInject.exe': ns.sqlinject
+  'SQLInject.exe': ns.sqlinject,
 });
-
 
 const getRoot = (ns: NS, host: string) => {
   if (ns.getServerNumPortsRequired(host)) penetrate(ns, host);
   ns.toast(`Gaining root access on ${host}`);
   ns.nuke(host);
-}
+};
 
 const penetrate = (ns: NS, host: string) => {
   ns.toast(`Penetrating ${host}`);
@@ -105,25 +103,21 @@ const penetrate = (ns: NS, host: string) => {
     'FTPCrack.exe': ns.ftpcrack,
     'relaySMTP.exe': ns.relaysmtp,
     'HTTPWorm.exe': ns.httpworm,
-    'SQLInject.exe': ns.sqlinject
+    'SQLInject.exe': ns.sqlinject,
   };
   for (const [key, value] of Object.entries(cracks)) {
     if (ns.fileExists(key, 'home')) {
       value(host);
     }
   }
-}
+};
 
-const canHack = (ns: NS, host: string) =>
-  ns.getHackingLevel() >= ns.getServerRequiredHackingLevel(host);
+const canHack = (ns: NS, host: string) => ns.getHackingLevel() >= ns.getServerRequiredHackingLevel(host);
 
 const analyzeServer = (ns: NS, host: string): Target => {
   const server: Target = ns.getServer(host) as Target;
   const { hostname, moneyAvailable, moneyMax } = server;
-  const [securityMin, security] = [
-    ns.getServerMinSecurityLevel(hostname),
-    ns.getServerSecurityLevel(hostname)
-  ];
+  const [securityMin, security] = [ns.getServerMinSecurityLevel(hostname), ns.getServerSecurityLevel(hostname)];
 
   const isMinSecurity: boolean = security === securityMin;
   const isMoneyMax: boolean = moneyAvailable === moneyMax;
@@ -145,7 +139,7 @@ const analyzeServer = (ns: NS, host: string): Target => {
   const timeHack = ns.getHackTime(hostname);
   const timeTotal = (isMinSecurity ? 0 : timeWeaken) + (isMoneyMax ? 0 : timeGrow) + timeHack;
 
-  const score = moneyMax! * hackPartMax * hackChanceMax * 1000 / timeTotal;
+  const score = (moneyMax! * hackPartMax * hackChanceMax * 1000) / timeTotal;
 
   return {
     ...server,
@@ -161,4 +155,4 @@ const analyzeServer = (ns: NS, host: string): Target => {
     timeTotal,
     score,
   };
-}
+};

@@ -21,7 +21,7 @@ export const main = async (ns: NS): Promise<void> => {
 
   if (homeRam > 64) {
     ns.run('/scripts/go.js');
-    ns.run('/scripts/gang.js')
+    ns.run('/scripts/gang.js');
   }
 
   if (homeRam > 128) {
@@ -32,6 +32,6 @@ export const main = async (ns: NS): Promise<void> => {
     ns.run('/scripts/share.js');
   }
 
-  // ns.run('/scripts/attack.js');
-  ns.run('/scripts/attack-simple.ts'); // ToDo: run attack-batch
-}
+  ns.run('/scripts/attack.js');
+  // ns.run('/scripts/attack-simple.ts'); // ToDo: fix simple, run batch
+};
